@@ -20,6 +20,7 @@ namespace AN_Labb1
 
             // Remove metoden
             Display(bxList);
+            Console.WriteLine("");
             Console.WriteLine("Removing 6x10x4");
             bxList.Remove(new Box(6, 10, 4));
             Display(bxList);
@@ -32,7 +33,7 @@ namespace AN_Labb1
                 BoxCheck.Height.ToString(), BoxCheck.Length.ToString(),
                 BoxCheck.Width.ToString(), bxList.Contains(BoxCheck).ToString());
 
-            // Test the Contains method overload with a specified equality comparer.
+            // Testar Contains metod med overload för specified equality comparer.
             Console.WriteLine("Contains {0}x{1}x{2} by volume: {3}",
                 BoxCheck.Height.ToString(), BoxCheck.Length.ToString(),
                 BoxCheck.Width.ToString(), bxList.Contains(BoxCheck,
