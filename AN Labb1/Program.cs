@@ -2,7 +2,7 @@
 
 namespace AN_Labb1
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -13,6 +13,7 @@ namespace AN_Labb1
             bxList.Add(new Box(6, 10, 4));
             bxList.Add(new Box(12, 8, 10));
             bxList.Add(new Box(8, 2, 8));
+            
 
             // Same diemsioner aka samma box, kan inte läggas till "test"
             bxList.Add(new Box(10, 4, 6));
@@ -22,6 +23,8 @@ namespace AN_Labb1
             Console.WriteLine("Removing 6x10x4");
             bxList.Remove(new Box(6, 10, 4));
             Display(bxList);
+            
+            Console.WriteLine("");
 
             // Contain metod
             Box BoxCheck = new Box(8, 12, 10);
@@ -34,6 +37,8 @@ namespace AN_Labb1
                 BoxCheck.Height.ToString(), BoxCheck.Length.ToString(),
                 BoxCheck.Width.ToString(), bxList.Contains(BoxCheck,
                 new BoxSameVol()).ToString());
+            
+            Console.ReadKey();
         }
         public static void Display(BoxCollection bxList)
         {
@@ -47,8 +52,10 @@ namespace AN_Labb1
 
             
 
-            Console.ReadKey();
+            
         }
-    }
+        
+    } 
+    
     
 }
