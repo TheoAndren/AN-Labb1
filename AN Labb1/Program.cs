@@ -27,13 +27,13 @@ namespace AN_Labb1
             
             Console.WriteLine("");
 
-            // Contain metod
+            // Contain metod för att kolla specifik dimension uppsättning
             Box BoxCheck = new Box(8, 12, 10);
             Console.WriteLine("Contains {0}x{1}x{2} by dimensions: {3}",
                 BoxCheck.Height.ToString(), BoxCheck.Length.ToString(),
                 BoxCheck.Width.ToString(), bxList.Contains(BoxCheck).ToString());
 
-            // Testar Contains metod med overload för specified equality comparer.
+            // Testar Contains metod med overload för specified equality comparer via volym
             Console.WriteLine("Contains {0}x{1}x{2} by volume: {3}",
                 BoxCheck.Height.ToString(), BoxCheck.Length.ToString(),
                 BoxCheck.Width.ToString(), bxList.Contains(BoxCheck,
