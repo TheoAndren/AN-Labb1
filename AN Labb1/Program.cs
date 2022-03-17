@@ -8,20 +8,20 @@ namespace AN_Labb1
         {
             BoxCollection bxList = new BoxCollection();
 
-            bxList.Add(new Box(10, 4, 6));
-            bxList.Add(new Box(4, 6, 10));
+            bxList.Add(new Box(4, 4, 4));
+            bxList.Add(new Box(6, 8, 10));
             bxList.Add(new Box(6, 10, 4));
-            bxList.Add(new Box(12, 8, 10));
-            bxList.Add(new Box(8, 2, 8));
+            bxList.Add(new Box(12, 8, 14));
+            bxList.Add(new Box(4, 2, 8));
             
 
             // Same diemsioner aka samma box, kan inte läggas till "test"
-            bxList.Add(new Box(10, 4, 6));
+            bxList.Add(new Box(4, 4, 4));
 
             // Remove metoden
             Display(bxList);
             Console.WriteLine("");
-            Console.WriteLine("Removing 6x10x4");
+            Console.WriteLine("6x10x4 Removed from list");
             bxList.Remove(new Box(6, 10, 4));
             Display(bxList);
             
